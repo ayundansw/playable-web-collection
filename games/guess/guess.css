@@ -1,0 +1,114 @@
+/* Guess Number Styles */
+
+.guess-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.game-desc {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.username-input-section {
+    margin-bottom: 2rem;
+}
+
+.game-stats {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-box {
+    background-color: var(--bg-card);
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    min-width: 100px;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.game-area {
+    background-color: var(--bg-card);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+}
+
+.hint-box {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    min-height: 2rem;
+    color: white;
+}
+
+.hint-box.low {
+    color: #facc15; /* Yellow */
+}
+
+.hint-box.high {
+    color: #f97316; /* Orange */
+}
+
+.hint-box.correct {
+    color: #4ade80; /* Green */
+}
+
+.input-area {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#guess-input {
+    width: 100px;
+    padding: 0.8rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-dark);
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.history {
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.history h3 {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.history-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.history-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.2rem 0.6rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+}

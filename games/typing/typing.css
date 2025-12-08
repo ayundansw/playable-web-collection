@@ -1,0 +1,110 @@
+/* Typing Game Styles */
+
+.typing-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.game-desc {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+.username-input-section {
+    margin-bottom: 2rem;
+}
+
+.game-stats {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    background-color: var(--bg-card);
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    min-width: 100px;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.typing-area {
+    background-color: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.text-display {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    font-family: monospace;
+    color: var(--text-secondary);
+    user-select: none;
+    min-height: 100px;
+}
+
+.text-display span {
+    position: relative;
+}
+
+.text-display span.correct {
+    color: var(--primary-color);
+}
+
+.text-display span.incorrect {
+    color: #ef4444;
+    text-decoration: underline;
+}
+
+.text-display span.current {
+    color: white;
+    background-color: rgba(139, 92, 246, 0.3);
+    border-radius: 2px;
+}
+
+.input-field {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    font-family: monospace;
+    resize: none;
+    height: 100px;
+    outline: none;
+    transition: border-color 0.3s;
+    opacity: 0.5;
+}
+
+.input-field:not(:disabled) {
+    opacity: 1;
+    border-color: var(--primary-color);
+}
+
+.controls {
+    margin-top: 2rem;
+}
