@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-a-Mole | Game Portfolio</title>
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="whack.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">GameFolio.</div>
+            <nav class="nav-links">
+                <a href="../../index.html">Beranda</a>
+                <a href="../../games.html" class="active">Games</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="whack-container">
+            <h1 class="section-title">Whack-a-Mole</h1>
+            <p class="game-desc">Pukul tikus tanah yang muncul sebelum dia sembunyi lagi! Kumpulkan poin sebanyak mungkin dalam 30 detik.</p>
+
+            <div class="username-input-section">
+                <input type="text" id="username" placeholder="Masukkan nama..." maxlength="15">
+                <button id="save-user-btn" class="btn-secondary">Set Nama</button>
+            </div>
+
+            <div class="game-stats">
+                <div class="stat-box">
+                    <span class="stat-label">Skor</span>
+                    <div class="stat-value" id="score">0</div>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Waktu</span>
+                    <div class="stat-value" id="timer">30s</div>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">High Score</span>
+                    <div class="stat-value" id="high-score">0</div>
+                </div>
+            </div>
+
+            <div class="game-grid">
+                <div class="hole" id="hole-1"><div class="mole"></div></div>
+                <div class="hole" id="hole-2"><div class="mole"></div></div>
+                <div class="hole" id="hole-3"><div class="mole"></div></div>
+                <div class="hole" id="hole-4"><div class="mole"></div></div>
+                <div class="hole" id="hole-5"><div class="mole"></div></div>
+                <div class="hole" id="hole-6"><div class="mole"></div></div>
+                <div class="hole" id="hole-7"><div class="mole"></div></div>
+                <div class="hole" id="hole-8"><div class="mole"></div></div>
+                <div class="hole" id="hole-9"><div class="mole"></div></div>
+            </div>
+
+            <div class="controls">
+                <button id="start-btn" class="btn-primary">Mulai Game</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2024 Game Portfolio.
+        </div>
+    </footer>
+
+    <script src="../../scripts/storage.js"></script>
+    <script src="whack.js"></script>
+</body>
+</html>

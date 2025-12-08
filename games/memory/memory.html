@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Flip | Game Portfolio</title>
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="memory.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">GameFolio.</div>
+            <nav class="nav-links">
+                <a href="../../index.html">Beranda</a>
+                <a href="../../games.html" class="active">Games</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="memory-container">
+            <h1 class="section-title">Memory Card Flip</h1>
+            <p class="game-desc">Temukan semua pasangan kartu secepat mungkin!</p>
+
+            <div class="username-input-section">
+                <input type="text" id="username" placeholder="Masukkan nama..." maxlength="15">
+                <button id="save-user-btn" class="btn-secondary">Set Nama</button>
+            </div>
+
+            <div class="game-stats">
+                <div class="stat-box">
+                    <span class="stat-label">Waktu</span>
+                    <div class="stat-value" id="timer">0s</div>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Langkah</span>
+                    <div class="stat-value" id="moves">0</div>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Rekor Waktu</span>
+                    <div class="stat-value" id="best-time">-</div>
+                </div>
+            </div>
+
+            <div class="game-board-wrapper">
+                <div class="game-board" id="game-board">
+                    <!-- Cards will be injected here by JS -->
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="start-btn" class="btn-primary">Mulai Game</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2024 Game Portfolio.
+        </div>
+    </footer>
+
+    <script src="../../scripts/storage.js"></script>
+    <script src="memory.js"></script>
+</body>
+</html>
