@@ -1,0 +1,67 @@
+/* Game Gallery Grid */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.game-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s ease;
+    height: 100%;
+}
+
+.game-card:hover {
+    background-color: var(--bg-card-hover);
+    transform: translateY(-4px);
+    border-color: var(--accent-color);
+}
+
+.game-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(94, 106, 210, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+    font-size: 1.5rem;
+}
+
+.game-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+
+.game-desc {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+    flex-grow: 1; /* Pushes button to bottom */
+}
+
+.game-card .btn-primary {
+    width: 100%;
+    text-align: center;
+}
+
+.badge-new {
+    background-color: var(--accent-color);
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 8px;
+    vertical-align: middle;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Game | Home</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <style>
+        /* Landing Page Specific Styles */
+        .hero {
+            height: calc(100vh - var(--header-height));
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at center, rgba(94, 106, 210, 0.1) 0%, rgba(8, 9, 10, 0) 70%);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            max-width: 800px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin-bottom: 2.5rem;
+        }
+
+        .profile-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 6px 16px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-subtle);
+            border-radius: 100px;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .skills-grid {
+            display: flex;
+            gap: 12px;
+            margin-top: 4rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skill-tag {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            border: 1px solid var(--border-subtle);
+            padding: 6px 12px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">GameFolio.</div>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Beranda</a>
+                <a href="games.html">Games</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="profile-badge">
+                <span>👋 Halo, saya [Nama Anda]</span>
+            </div>
+
+            <h1 class="text-gradient">
+                Membangun Pengalaman Digital yang Interaktif
+            </h1>
+
+            <p>
+                Frontend Developer & Creative Coder. Mengubah logika menjadi kesenangan melalui web game interaktif.
+            </p>
+
+            <a href="games.html" class="btn-primary">
+                Let’s bring some fun with me!
+            </a>
+
+            <div class="skills-grid">
+                <div class="skill-tag">HTML5</div>
+                <div class="skill-tag">CSS3</div>
+                <div class="skill-tag">JavaScript (ES6+)</div>
+                <div class="skill-tag">Responsive Design</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2024 Game Portfolio. Dibuat dengan antusiasme.
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
