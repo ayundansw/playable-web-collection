@@ -1,0 +1,21 @@
+.game-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 80%;
+  max-width: 900px;
+  margin-top: 40px;
+}
+
+.game-card {
+  background-color: #1d2d44;
+  padding: 24px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.game-card:hover {
+  background-color: #3e5c76;
+}
